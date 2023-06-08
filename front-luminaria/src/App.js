@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 2000
+      duration: 1200
     });
     return () => {
       AOS.refresh();
