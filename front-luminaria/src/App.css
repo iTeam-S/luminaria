@@ -152,11 +152,32 @@ body{
   right: 0;
 }
 
+.svgRight {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.svgLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+}
+
 .titrePage {
   font-size: 1.5rem;
   max-width: 65%;
   margin-top: 30px;
   text-align: start;
+}
+
+.style-row {
+  margin-bottom: 300px;
 }
 
 .titrePage h1 {
@@ -173,6 +194,54 @@ body{
 .svgCircle {
   width: 125px;
   height: 125px;
+}
+
+.info {
+  margin-left: 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.content-Image {
+  position: relative;
+  min-width: 100%;
+  height: 200%;
+  padding: 20px;
+}
+
+.content-Item {
+  position: relative;
+  min-width: 100%;
+  height: 200%;
+  padding: 15px;
+}
+
+.content-Item p{
+  font-family: Aventi;
+  font-size: 20px;
+  color: #212121;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 20px;
+}
+
+.content-Image-carre {
+  max-width: 80%;
+  min-height: 76%;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #212121;
+  margin: 45px;
+}
+
+.content-Image-field{
+  max-width: 80%;
+  min-height: 21%;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #212121;
+  margin: 34px;
 }
 
 
