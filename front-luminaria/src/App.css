@@ -49,6 +49,41 @@ body{
   pointer-events: none;
 }
 
+.cont-foot {
+  background-color: #212121 !important;
+  color: #FFF2D2 !important;
+  font-family: Aventi;
+  margin-top: 100px;
+}
+
+.social-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.inp-modi {
+  background-color: #212121 !important;
+  color : #FFF2D2 !important;
+  border : 2px solid #F6A713 !important;
+}
+
+.inp-modi::placeholder{
+  color: #FFF2D2 !important;
+}
+
+.appen-mod {
+  background-color: #F6A713 !important;
+}
+
+.group-mod{
+  padding-top: 17px !important;
+  background-color: #F6A713 !important;
+  border: none !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
