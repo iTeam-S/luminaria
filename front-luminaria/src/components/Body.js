@@ -30,6 +30,46 @@ function Body () {
             <button className="btn btn-outline-dark mx-3 shadow-merch" type="submit">More  <i class="fas fa-light fa-arrow-down fa-lg mx-1"></i></button>
             </div>
 
+            <div className="cardTete">
+                <div className="divHrTop bod mt-5"></div> 
+                <div className="row">     
+                    <div className="col-md-4 start-col">
+                        <div className="content-descr">
+                            <h2><span><i class="fa-solid fa-spinner fa-spin"></i></span> EN COURS</h2>
+                            <p>Lore
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-md-4 mid-col">
+                        <div className="content-descr">
+                            <h2><span><i class="fa-solid fa-square-check fa-bounce"></i></span> ACHEVEE</h2>
+                            <p>Lore
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-md-4 end-col">
+                        <div className="content-descr">
+                            <h2><span><i class="fa-solid fa-play fa-fade"></i></span> A VENIR</h2>
+                            <p>Lore
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+
+
         </div>
     )
 }

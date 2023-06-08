@@ -34,4 +34,43 @@
         margin-left: 25px;
     }
 
+    .bod {
+        display: none;
+    }
+
+    .cardTete {
+        margin-top: 25px;
+        border-left: 1px solid black;
+        /* border-right: 1px solid black; */
+        border-top: 1px solid black;
+    }
+
+    .cardTete .row{
+        width: 100%;
+    }
+
+    .start-col {
+        margin-bottom: 25px;
+        border: 1px solid black;
+        border-bottom-left-radius: 50px;
+        /* border-top-left-radius: 50px; */
+        margin-left: 11px;
+
+    }
+
+    .mid-col {
+        margin-bottom: 25px;
+        border: 1px solid black;
+        border-radius: 50px;
+        margin-left: 11px;
+    }
+
+    .end-col {
+        /* margin-bottom: 25px; */
+        border: 1px solid black;
+        border-bottom-right-radius: 50px;
+        margin-left: 11px;
+
+    }
+
 }
