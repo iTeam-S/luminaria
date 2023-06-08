@@ -30,7 +30,7 @@ function Body () {
             <button data-aos="zoom-in" className="btn btn-outline-dark mx-3 shadow-merch" type="submit">More  <i class="fas fa-light fa-arrow-down fa-lg mx-1"></i></button>
             </div>
 
-            <div className="cardTete">
+            <div data-aos="flip-up" className="cardTete">
                 <div className="divHrTop bod mt-5"></div> 
                 <div className="row">     
                     <div data-aos="fade-up" className="col-md-4 start-col">
