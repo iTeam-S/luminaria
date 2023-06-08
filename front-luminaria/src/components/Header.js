@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import { faBars, faLock, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './respoHead.css'
 
 function Header() {
+  const menubar = useRef();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleBar = () => {
+    setIsMenuOpen(true);
+    menubar.current.classList.toggle("HashNav");
+  }
+  const maskBar = () => {
+    setIsMenuOpen(false);
+    menubar.current.classList.toggle("HashNav");
+  }
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -9,8 +23,9 @@ function Header() {
             <img src="./logoluminaria.jpeg" alt="Logo" width="30" height="30" className="d-inline-block align-text-top"/>
             luminaria
           </a>
+          <div className="menu-bars">{!isMenuOpen ? (<FontAwesomeIcon icon={faBars} onClick={() => handleBar()}/>) : (<FontAwesomeIcon icon={faXmark} onClick = {() => maskBar()}/>)}</div>  
           </div>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="HashNav navbar-collapse" ref={menubar} id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,9 +52,8 @@ function Header() {
                 <a className="nav-link">CONTACT</a>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-            
-              <button className="btn btn-outline-dark mx-3 shadow-merch" type="submit">MERCH</button>
+            <form className="d-flex" style={{alignItems: 'center', flexDirection: 'column'}} role="search">        
+              <button className="btn btn-outline-dark mx-3 shadow-merch" type="submit">MERCH <FontAwesomeIcon icon={faLock} /></button>
             </form>
           </div>
       </nav>

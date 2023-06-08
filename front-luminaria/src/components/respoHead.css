@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .menu-bars {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .HashNav {
+        display: none;
+    }
+
+    .modif-drop{
+        width: 50%;
+    }
+
+    .nav-item.dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
