@@ -25,7 +25,7 @@ function Header() {
           </a>
           <div className="menu-bars">{!isMenuOpen ? (<FontAwesomeIcon icon={faBars} onClick={() => handleBar()}/>) : (<FontAwesomeIcon icon={faXmark} onClick = {() => maskBar()}/>)}</div>  
           </div>
-          <div className="HashNav navbar-collapse" ref={menubar} id="navbarSupportedContent">
+          <div data-aos="fade-left" className="HashNav navbar-collapse" ref={menubar} id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
