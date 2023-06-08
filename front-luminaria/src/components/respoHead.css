@@ -19,5 +19,19 @@
         align-items: center;
     }
 
+    .titrePage {
+        max-width: 65%;
+        
+    }
+
+    .titrePage h1 {
+        font-size: 40px !important;
+    }
+
+    .svgCircle {
+        width: 55px;
+        height: 55px;
+        margin-left: 25px;
+    }
 
 }
