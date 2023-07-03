@@ -1,12 +1,17 @@
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Body from './components/Body';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Contact from './Contact';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import './App.css';
 
 function App() {
+  <Router>
+    <Route path="/contact" component={Contact} />
+  </Router>
   useEffect(() => {
     AOS.init({
       duration: 1200
@@ -21,8 +26,7 @@ function App() {
       <Header />
       <Body />
       <Footer />
-
-    </div>
+     </div>
   );
 }
 

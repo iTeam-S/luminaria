@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { faBars, faLock, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './respoHead.css'
+import './respoHead.css';
 
 function Header() {
   const menubar = useRef();
